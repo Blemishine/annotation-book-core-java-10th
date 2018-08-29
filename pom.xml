@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.xy2401.annotation.book</groupId>
+	<artifactId>core-java</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Core Java  10th Edition </name>
+	<description>Core Java  10th Edition  代码注解 </description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+
+		<!-- used @ /core-java/src/main/v1ch13/webstart/CalculatorFrame.java -->
+		<!-- https://mvnrepository.com/artifact/javax.jnlp/jnlp-api -->
+		<dependency>
+			<groupId>javax.jnlp</groupId>
+			<artifactId>jnlp-api</artifactId>
+			<version>8.0</version>
+			<scope>system</scope>
+			<systemPath>${java.home}/lib/javaws.jar</systemPath>
+		</dependency>
+
+
+		<!-- used @ /core-java/src/main/v2ch04/mail/MailTest.java -->
+		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+
+		<!-- used @ /core-java/src/main/v2ch08/bytecodeAnnotations/EntryLogger.java -->
+		<!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+		<dependency>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm</artifactId>
+			<version>6.2.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.ow2.asm/asm-commons -->
+		<dependency>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm-commons</artifactId>
+			<version>6.2.1</version>
+		</dependency>
+
+
+
+	</dependencies>
+
+	<!-- for 'nu.xom:com.springsource.nu.xom:jar:1.2.5' -->
+<!-- 	<repositories>
+		<repository>
+			<id>Boundless</id>
+			<name>Boundless</name>
+			<url>http://repo.boundlessgeo.com/main/</url>
+		</repository>
+
+	</repositories> -->
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>src/main/gutenberg</source>
+								<source>src/main/v1ch02/ImageViewer</source>
+								<source>src/main/v1ch02/RoadApplet</source>
+								<source>src/main/v1ch02/Welcome</source>
+
+								<source>src/main/v1ch03/BigIntegerTest</source>
+								<source>src/main/v1ch03/CompoundInterest</source>
+								<source>src/main/v1ch03/FirstSample</source>
+								<source>src/main/v1ch03/InputTest</source>
+								<source>src/main/v1ch03/LotteryArray</source>
+								<source>src/main/v1ch03/LotteryDrawing</source>
+								<source>src/main/v1ch03/LotteryOdds</source>
+								<source>src/main/v1ch03/Retirement</source>
+								<source>src/main/v1ch03/Retirement2</source>
+
+								<source>src/main/v1ch04/CalendarTest</source>
+								<source>src/main/v1ch04/ConstructorTest</source>
+								<source>src/main/v1ch04/EmployeeTest</source>
+								<source>src/main/v1ch04/PackageTest</source>
+								<source>src/main/v1ch04/ParamTest</source>
+								<source>src/main/v1ch04/StaticTest</source>
+
+								<source>src/main/v1ch05</source>
+								<source>src/main/v1ch06</source>
+								<source>src/main/v1ch07</source>
+								<source>src/main/v1ch08</source>
+								<source>src/main/v1ch09</source>
+								<source>src/main/v1ch10</source>
+								<source>src/main/v1ch11</source>
+								<source>src/main/v1ch12</source>
+								<source>src/main/v1ch13</source>
+								<source>src/main/v1ch14</source>
+								<source>src/main/v2ch01</source>
+								<source>src/main/v2ch02</source>
+								<source>src/main/v2ch03</source>
+								<source>src/main/v2ch04</source>
+								<source>src/main/v2ch05</source>
+								<source>src/main/v2ch06</source>
+								<source>src/main/v2ch07</source>
+								<source>src/main/v2ch08</source>
+								<source>src/main/v2ch09</source>
+								<source>src/main/v2ch10</source>
+								<source>src/main/v2ch11</source>
+
+								<source>src/main/v2ch12/employee</source>
+								<source>src/main/v2ch12/helloNative</source>
+								<source>src/main/v2ch12/invocation</source>
+								<source>src/main/v2ch12/printf1</source>
+								<source>src/main/v2ch12/printf2</source>
+								<source>src/main/v2ch12/printf3</source>
+								<source>src/main/v2ch12/printf4</source>
+								<source>src/main/v2ch12/win32reg</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+
+
+	</build>
+
+
+</project>
