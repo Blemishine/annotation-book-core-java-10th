@@ -1,4 +1,4 @@
-package zonedtimes;
+package zonedTimes;
 
 import java.time.*;
 
