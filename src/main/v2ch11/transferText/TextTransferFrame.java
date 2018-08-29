@@ -59,7 +59,7 @@ public class TextTransferFrame extends JFrame
             String text = (String) clipboard.getData(flavor);
             textArea.replaceSelection(text);
          }
-         catch (UnsupportedFlavorException e | IOException ex)
+         catch (UnsupportedFlavorException  | IOException ex)
          {
             JOptionPane.showMessageDialog(this, ex);
          }
