@@ -1,3 +1,5 @@
+package v2ch12.employee;
+
 /**
  * @version 1.10 1999-11-13
  * @author Cay Horstmann

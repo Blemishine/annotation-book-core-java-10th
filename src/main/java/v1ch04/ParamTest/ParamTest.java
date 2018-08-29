@@ -1,3 +1,5 @@
+package v1ch04.ParamTest;
+
 /**
  * This program demonstrates parameter passing in Java.
  * @version 1.00 2000-01-27
