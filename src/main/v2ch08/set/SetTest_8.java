@@ -7,7 +7,7 @@ import java.util.logging.*;
  * @version 1.02 2012-01-26
  * @author Cay Horstmann
  */
-public class SetTest
+public class SetTest_8
 {  
    public static void main(String[] args)
    {  
