@@ -1,0 +1,348 @@
+# Contents
+
+
+-  Preface xv
+-  Acknowledgments xix
+
+-  Chapter 1: The Java SE 8 Stream Library 1
+    -  1.1 From Iterating to Stream Operations 2
+    -  1.2 Stream Creation 5
+    -  1.3 The filter, map, and flatMap Methods 9
+    -  1.4 Extracting Substreams and Concatenating Streams 10
+    -  1.5 Other Stream Transformations 11
+    -  1.6 Simple Reductions 12
+    -  1.7 The Optional Type 13
+        -  1.7.1 How to Work with Optional Values 14
+        -  1.7.2 How Not to Work with Optional Values 15
+        -  1.7.3 Creating Optional Values 16
+        -  1.7.4 Composing Optional Value Functions with flatMap. 16
+    -  1.8 Collecting Results 19
+    -  1.9 Collecting into Maps 24
+    -  1.10 Grouping and Partitioning 28
+    -  1.11 Downstream Collectors 29
+    -  1.12 Reduction Operations 33
+    -  1.13 Primitive Type Streams 36
+    -  1.14 Parallel Streams 41
+
+-  Chapter 2: Input and Output 47
+    -  2.1 Input/Output Streams 48
+        -  2.1.1 Reading and Writing Bytes 48
+        -  2.1.2 The Complete Stream Zoo 51
+        -  2.1.3 Combining Input/Output Stream Filters 55 
+    -  2.2 Text Input and Output 60
+        -  2.2.1 How to Write Text Output 60
+        -  2.2.2 How to Read Text Input 62
+        -  2.2.3 Saving Objects in Text Format 63
+        -  2.2.4 Character Encodings 67
+    -  2.3 Reading and Writing Binary Data 69
+        -  2.3.1 The DataInput and DataOutput interfaces 69
+        -  2.3.2 Random-Access Files 72
+        -  2.3.3 ZIP Archives 77
+        -  2.4 Object Input/Output Streams and Serialization 80
+        -  2.4.1 Saving and Loading Serializable Objects 80
+        -  2.4.2 Understanding the Object Serialization File Format 85
+        -  2.4.3 Modifying the Default Serialization Mechanism 92
+        -  2.4.4 Serializing Singletons and Typesafe Enumerations 94
+        -  2.4.5 Versioning 95
+        -  2.4.6 Using Serialization for Cloning 98
+    -  2.5 Working with Files 100
+        -  2.5.1 Paths 101
+        -  2.5.2 Reading and Writing Files 104
+        -  2.5.3 Creating Files and Directories 105
+        -  2.5.4 Copying, Moving, and Deleting Files 106
+        -  2.5.5 Getting File Information 108
+        -  2.5.6 Visiting Directory Entries 110
+        -  2.5.7 Using Directory Streams 111
+        -  2.5.8 ZIP File Systems 115
+    -  2.6 Memory-Mapped Files 116
+        -  2.6.1 Memory-Mapped File Performance 116
+        -  2.6.2 The Buffer Data Structure 124
+        -  2.6.3 File Locking 126
+    -  2.7 Regular Expressions 128
+
+-  Chapter 3: XML 143
+    -  3.1 Introducing XML 144
+        -  3.1.1 The Structure of an XML Document 146 
+        -  3.2 Parsing an XML Document 149
+        -  3.3 Validating XML Documents 162
+        -  3.3.1 Document Type Definitions 163
+        -  3.3.2 XML Schema 172
+        -  3.3.3 A Practical Example 175
+    -  3.4 Locating Information with XPath 190
+    -  3.5 Using Namespaces 196
+    -  3.6 Streaming Parsers 199
+        -  3.6.1 Using the SAX Parser 199
+        -  3.6.2 Using the StAX Parser 205
+    -  3.7 Generating XML Documents 208
+        -  3.7.1 Documents without Namespaces 209
+        -  3.7.2 Documents with Namespaces 209
+        -  3.7.3 Writing Documents 210
+        -  3.7.4 An Example: Generating an SVG File 211
+        -  3.7.5 Writing an XML Document with StAX 214
+    -  3.8 XSL Transformations 222
+
+-  Chapter 4: Networking 233
+    -  4.1 Connecting to a Server 233
+        -  4.1.1 Using Telnet 233
+        -  4.1.2 Connecting to a Server with Java 236
+        -  4.1.3 Socket Timeouts 238
+        -  4.1.4 Internet Addresses 239
+    -  4.2 Implementing Servers 241
+        -  4.2.1 Server Sockets 242
+        -  4.2.2 Serving Multiple Clients 245
+        -  4.2.3 Half-Close 249
+    -  4.3 Interruptible Sockets 250
+    -  4.4 Getting Web Data 257
+        -  4.4.1 URLs and URIs 257
+        -  4.4.2 Using a URLConnection to Retrieve Information 259
+        -  4.4.3 Posting Form Data 267
+    -  4.5 Sending E-Mail 277 
+
+-  Chapter 5: Database Programming 281
+    -  5.1 The Design of JDBC 282
+        -  5.1.1 JDBC Driver Types 283
+        -  5.1.2 Typical Uses of JDBC 284
+    -  5.2 The Structured Query Language 285
+    -  5.3 JDBC Configuration 291
+        -  5.3.1 Database URLs 292
+        -  5.3.2 Driver JAR Files 292
+        -  5.3.3 Starting the Database 293
+        -  5.3.4 Registering the Driver Class 294
+        -  5.3.5 Connecting to the Database 294
+    -  5.4 Working with JDBC Statements 297
+        -  5.4.1 Executing SQL Statements 298
+        -  5.4.2 Managing Connections, Statements, and Result Sets 301
+        -  5.4.3 Analyzing SQL Exceptions 302
+        -  5.4.4 Populating a Database 305
+    -  5.5 Query Execution 309
+        -  5.5.1 Prepared Statements 309
+        -  5.5.2 Reading and Writing LOBs 316
+        -  5.5.3 SQL Escapes 318
+        -  5.5.4 Multiple Results 319
+        -  5.5.5 Retrieving Autogenerated Keys 320
+    -  5.6 Scrollable and Updatable Result Sets 321
+        -  5.6.1 Scrollable Result Sets 321
+        -  5.6.2 Updatable Result Sets 324
+    -  5.7 Row Sets 328
+        -  5.7.1 Constructing Row Sets 329
+        -  5.7.2 Cached Row Sets 329
+    -  5.8 Metadata 333
+    -  5.9 Transactions 344
+        -  5.9.1 Programming Transactions with JDBC 344
+        -  5.9.2 Save Points 345
+        -  5.9.3 Batch Updates 345
+        -  5.10 Advanced SQL Types 347
+        -  5.11 Connection Management in Web and Enterprise Applications 349
+ 
+-  Chapter 6: The Date and Time API 351
+        -  6.1 The Time Line 352
+        -  6.2 Local Dates 355
+        -  6.3 Date Adjusters 358
+        -  6.4 Local Time 360
+        -  6.5 Zoned Time 361
+        -  6.6 Formatting and Parsing 365
+        -  6.7 Interoperating with Legacy Code 369
+ 
+-  Chapter 7: Internationalization 371
+    -  7.1 Locales 372
+    -  7.2 Number Formats 378
+    -  7.3 Currencies 384
+    -  7.4 Date and Time 385
+    -  7.5 Collation and Normalization 393
+    -  7.6 Message Formatting 400
+        -  7.6.1 Formatting Numbers and Dates 400
+        -  7.6.2 Choice Formats 402
+    -  7.7 Text Input and Output 404
+        -  7.7.1 Text Files 405
+        -  7.7.2 Line Endings 405
+        -  7.7.3 The Console 405
+        -  7.7.4 Log Files 406
+        -  7.7.5 The UTF-8 Byte Order Mark 406
+        -  7.7.6 Character Encoding of Source Files 407
+    -  7.8 Resource Bundles 408
+        -  7.8.1 Locating Resource Bundles 409
+        -  7.8.2 Property Files 410
+        -  7.8.3 Bundle Classes 411
+    -  7.9 A Complete Example 413
+ 
+-  Chapter 8: Scripting, Compiling, and Annotation Processing 429
+    -  8.1 Scripting for the Java Platform 430
+        -  8.1.1 Getting a Scripting Engine 430
+        -  8.1.2 Script Evaluation and Bindings 431
+        -  8.1.3 Redirecting Input and Output 434 
+        -  8.1.4 Calling Scripting Functions and Methods 435
+        -  8.1.5 Compiling a Script 437
+        -  8.1.6 An Example: Scripting GUI Events 437
+    -  8.2 The Compiler API 443
+        -  8.2.1 Compiling the Easy Way 443
+        -  8.2.2 Using Compilation Tasks 443
+        -  8.2.3 An Example: Dynamic Java Code Generation 449
+    -  8.3 Using Annotations 455
+        -  8.3.1 An Introduction into Annotations 455
+        -  8.3.2 An Example: Annotating Event Handlers 457
+    -  8.4 Annotation Syntax 462
+        -  8.4.1 Annotation Interfaces 462
+        -  8.4.2 Annotations 464
+        -  8.4.3 Annotating Declarations 466
+        -  8.4.4 Annotating Type Uses 467
+        -  8.4.5 Annotating this 468
+    -  8.5 Standard Annotations 470
+        -  8.5.1 Annotations for Compilation 471
+        -  8.5.2 Annotations for Managing Resources 472
+        -  8.5.3 Meta-Annotations 472
+    -  8.6 Source-Level Annotation Processing 475
+        -  8.6.1 Annotation Processors 476
+        -  8.6.2 The Language Model API 476
+        -  8.6.3 Using Annotations to Generate Source Code 477
+    -  8.7 Bytecode Engineering 481
+        -  8.7.1 Modifying Class Files 481
+        -  8.7.2 Modifying Bytecodes at Load Time 486
+ 
+-  Chapter 9: Security 491
+    -  9.1 Class Loaders 492
+        -  9.1.1 The Class Loading Process 492
+        -  9.1.2 The Class Loader Hierarchy 494
+        -  9.1.3 Using Class Loaders as Namespaces 496
+        -  9.1.4 Writing Your Own Class Loader 497
+        -  9.1.5 Bytecode Verification 504 
+    -  9.2 Security Managers and Permissions 509
+        -  9.2.1 Permission Checking 509
+        -  9.2.2 Java Platform Security 510
+        -  9.2.3 Security Policy Files 514
+        -  9.2.4 Custom Permissions 522
+        -  9.2.5 Implementation of a Permission Class 524
+    -  9.3 User Authentication 530
+        -  9.3.1 The JAAS Framework 531
+        -  9.3.2 JAAS Login Modules 537
+    -  9.4 Digital Signatures 546
+        -  9.4.1 Message Digests 547
+        -  9.4.2 Message Signing 550
+        -  9.4.3 Verifying a Signature 553
+        -  9.4.4 The Authentication Problem 556
+        -  9.4.5 Certificate Signing 558
+        -  9.4.6 Certificate Requests 560
+        -  9.4.7 Code Signing 561
+    -  9.5 Encryption 567
+        -  9.5.1 Symmetric Ciphers 567
+        -  9.5.2 Key Generation 569
+        -  9.5.3 Cipher Streams 574
+        -  9.5.4 Public Key Ciphers 575
+ 
+-  Chapter 10: Advanced Swing 581
+    -  10.1 Lists 582
+        -  10.1.1 The JList Component 582
+        -  10.1.2 List Models 588
+        -  10.1.3 Inserting and Removing Values 593
+        -  10.1.4 Rendering Values 595
+    -  10.2 Tables 599
+        -  10.2.1 A Simple Table 600
+        -  10.2.2 Table Models 604
+        -  10.2.3 Working with Rows and Columns 608
+            -  10.2.3.1 Column Classes 609
+            -  10.2.3.2 Accessing Table Columns 610
+            -  10.2.3.3 Resizing Columns 611 
+            -  10.2.3.4 Resizing Rows 612
+            -  10.2.3.5 Selecting Rows, Columns, and Cells 612
+            -  10.2.3.6 Sorting Rows 614
+            -  10.2.3.7 Filtering Rows 615
+            -  10.2.3.8 Hiding and Displaying Columns 617
+        -  10.2.4 Cell Rendering and Editing 626
+            -  10.2.4.1 Rendering Cells 626
+            -  10.2.4.2 Rendering the Header 627
+            -  10.2.4.3 Editing Cells 628
+            -  10.2.4.4 Custom Editors 629
+    -  10.3 Trees 639
+        -  10.3.1 Simple Trees 640
+        -  10.3.2 Editing Trees and Tree Paths 650
+        -  10.3.3 Node Enumeration 659
+        -  10.3.4 Rendering Nodes 661
+        -  10.3.5 Listening to Tree Events 664
+        -  10.3.6 Custom Tree Models 671
+    -  10.4 Text Components 681
+        -  10.4.1 Change Tracking in Text Components 682
+        -  10.4.2 Formatted Input Fields 685
+            -  10.4.2.1 Integer Input 686
+            -  10.4.2.2 Behavior on Loss of Focus 687
+            -  10.4.2.3 Filters 688
+            -  10.4.2.4 Verifiers 690
+            -  10.4.2.5 Other Standard Formatters 691
+            -  10.4.2.6 Custom Formatters 693
+        -  10.4.3 The JSpinner Component 703
+        -  10.4.4 Displaying HTML with the JEditorPane 712
+    -  10.5 Progress Indicators 719
+        -  10.5.1 Progress Bars 719
+        -  10.5.2 Progress Monitors 722
+        -  10.5.3 Monitoring the Progress of Input Streams 726
+    -  10.6 Component Organizers and Decorators 731
+        -  10.6.1 Split Panes 732
+        -  10.6.2 Tabbed Panes 735 
+        -  10.6.3 Desktop Panes and Internal Frames 741
+            -  10.6.3.1 Displaying Internal Frames 741
+            -  10.6.3.2 Cascading and Tiling 744
+            -  10.6.3.3 Vetoing Property Settings 748
+            -  10.6.3.4 Dialogs in Internal Frames 750
+            -  10.6.3.5 Outline Dragging 751
+        -  10.6.4 Layers 760
+
+-  Chapter 11: Advanced AWT 765
+    -  11.1 The Rendering Pipeline 766
+        -  11.2 Shapes 769
+        -  11.2.1 The Shape Class Hierarchy 769
+        -  11.2.2 Using the Shape Classes 772
+    -  11.3 Areas 786
+    -  11.4 Strokes 788
+    -  11.5 Paint 797
+    -  11.6 Coordinate Transformations 799
+    -  11.7 Clipping 805
+    -  11.8 Transparency and Composition 807
+    -  11.9 Rendering Hints 817
+    -  11.10 Readers and Writers for Images 823
+        -  11.10.1 Obtaining Readers and Writers for Image File Types 824
+        -  11.10.2 Reading and Writing Files with Multiple Images 825
+    -  11.11 Image Manipulation 834
+        -  11.11.1 Constructing Raster Images 835
+        -  11.11.2 Filtering Images 842
+    -  11.12 Printing 851
+        -  11.12.1 Graphics Printing 852
+        -  11.12.2 Multiple-Page Printing 862
+        -  11.12.3 Print Preview 864
+        -  11.12.4 Print Services 874
+        -  11.12.5 Stream Print Services 878
+        -  11.12.6 Printing Attributes 879
+    -  11.13 The Clipboard 887
+        -  11.13.1 Classes and Interfaces for Data Transfer 888
+        -  11.13.2 Transferring Text 888 
+        -  11.13.3 The Transferable Interface and Data Flavors 892
+        -  11.13.4 Building an Image Transferable 894
+        -  11.13.5 Transferring Java Objects via the System Clipboard 898
+        -  11.13.6 Using a Local Clipboard to Transfer Object References 902
+    -  11.14 Drag and Drop 903
+        -  11.14.1 Data Transfer Support in Swing 904
+        -  11.14.2 Drag Sources 909
+        -  11.14.3 Drop Targets 912
+    -  11.15 Platform Integration 921
+        -  11.15.1 Splash Screens 921
+        -  11.15.2 Launching Desktop Applications 927
+        -  11.15.3 The System Tray 932
+
+-  Chapter 12: Native Methods 939
+    -  12.1 Calling a C Function from a Java Program 940
+    -  12.2 Numeric Parameters and Return Values 947
+    -  12.3 String Parameters 949
+    -  12.4 Accessing Fields 956
+        -  12.4.1 Accessing Instance Fields 956
+        -  12.4.2 Accessing Static Fields 960
+    -  12.5 Encoding Signatures 961
+    -  12.6 Calling Java Methods 963
+        -  12.6.1 Instance Methods 963
+        -  12.6.2 Static Methods 964
+        -  12.6.3 Constructors 965
+        -  12.6.4 Alternative Method Invocations 966
+    -  12.7 Accessing Array Elements 970
+    -  12.8 Handling Errors 974
+    -  12.9 Using the Invocation API 980
+    -  12.10 A Complete Example: Accessing the Windows Registry 985
+        -  12.10.1 Overview of the Windows Registry 985
+        -  12.10.2 A Java Platform Interface for Accessing the Registry 987
+        -  12.10.3 Implementation of Registry Access Functions as Native Methods 988
+-  Index 1002
