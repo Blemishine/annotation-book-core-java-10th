@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.xy2401.annotation.book</groupId>
-	<artifactId>core-java</artifactId>
+	<artifactId>core-java-10th</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
