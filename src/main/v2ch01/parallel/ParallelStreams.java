@@ -13,7 +13,7 @@ public class ParallelStreams
    public static void main(String[] args) throws IOException
    {
       String contents = new String(Files.readAllBytes(
-            Paths.get("../gutenberg/alice30.txt")), StandardCharsets.UTF_8);
+            Paths.get("src/main/gutenberg/alice30.txt")), StandardCharsets.UTF_8);
       List<String> wordList = Arrays.asList(contents.split("\\PL+"));
 
       // Very bad code ahead
