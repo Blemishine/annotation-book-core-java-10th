@@ -31,7 +31,7 @@ public class CreatingStreams
 
    public static void main(String[] args) throws IOException
    {
-      Path path = Paths.get("../gutenberg/alice30.txt");
+      Path path = Paths.get("src/main/gutenberg/alice30.txt");
       String contents = new String(Files.readAllBytes(path),
             StandardCharsets.UTF_8);
 
